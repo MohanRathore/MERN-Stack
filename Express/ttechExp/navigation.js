@@ -2,7 +2,9 @@ const express = require("express");
 const app = express();
 
 app.get("/", (req,res) => {
-    res.send("Welcome to home page");
+    res.write("<h1>Welcome to home page</h1>");
+    res.write("<h2>Welcome to home page again</h2>");
+    res.send();
 });
 
 app.get("/about", (req,res) => {
@@ -10,7 +12,19 @@ app.get("/about", (req,res) => {
 });
 
 app.get("/contact", (req,res) => {
-    res.send("Welcome to contact page");
+    res.json([{
+        name : "mohan",
+        lastname : "kumar",
+        age : 24
+    },{
+        name : "mohan",
+        lastname : "kumar",
+        age : 24
+    },{
+        name : "mohan",
+        lastname : "kumar",
+        age : 24
+    }]);
 });
 
 app.listen(8000, ()=>{
