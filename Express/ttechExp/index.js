@@ -1,12 +1,15 @@
 
 const express = require("express");
 const express = require("path");
+const express = require("hbs");
+
+
 
 const app = express();
 
 const port = 8000;
 
-const viewPath = 
+const viewPath = path.join(__dirname,"/templates/partials")
 app.set("view engine","hbs");
 app.set("views",viewPath)
 //template engine route
