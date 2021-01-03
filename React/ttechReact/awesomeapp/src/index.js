@@ -29,14 +29,17 @@ const arr = ["Mohan","Kumar","Rathore"]
 const name = "Mohan Kumar";
 const age = 24;
 
+let date = new Date();
 
-ReactDOM.render(
-<>
-  <h1>Hello {name+ " and age is " + age} Welcome!!</h1>
-  <p>{`this is using template literals ${name} and age is ${age}`}</p>
-  <h2>This is JSX not html tages {Math.floor(Math.random()*10)}</h2>
-</>
-  ,document.getElementById("root"));
+// ReactDOM.render(
+// <>
+//   <h1>Hello {name+ " and age is " + age} Welcome!!</h1>
+//   <p>{`this is using template literals ${name} and age is ${age}`}</p>
+//   <h2>This is JSX not html tages {Math.floor(Math.random()*10)}</h2>
+//   <p>Today date is {date.toLocaleDateString()}</p>
+//   <p>Today date is {date.toLocaleTimeString()}</p>
+// </>
+//   ,document.getElementById("root"));
 
 //above code crate one extra div in root div but using array of element will not give such error...so we use react fragment to overcome this is React.Fragment
 
@@ -47,3 +50,14 @@ ReactDOM.render(
 //   <h2> using array This is JSX not html tages</h2>
 // ]
 //   ,document.getElementById("root"));
+
+//JSX react in react 
+ReactDOM.render(
+  <>
+    <h1 contentEditable="true">Hello {name+ " and age is " + age} Welcome!!</h1>
+    <p>{`this is using template literals ${name} and age is ${age}`}</p>
+    <h2>This is JSX not html tages {Math.floor(Math.random()*10)}</h2>
+    <p>Today date is {date.toLocaleDateString()}</p>
+    <p>Today date is {date.toLocaleTimeString()}</p>
+  </>
+    ,document.getElementById("root"));
