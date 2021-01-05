@@ -32,4 +32,7 @@ class Car extends React.Component {
   }
 }
 
-ReactDOM.render(<Car />, document.getElementById('root'));
+//ReactDOM.render(<Car />, document.getElementById('root'));
+ReactDOM.render(
+<Car />,
+ document.getElementById('root'));
