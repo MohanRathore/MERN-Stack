@@ -28,3 +28,11 @@ let contact = {
 };
 
 console.log(contact.address.galino);
+
+//Number
+let num = new Number(100);
+console.log(num.valueOf());
+console.log(num.toString());
+console.log(num.toString(2));
+console.log(num.toString(16));
+console.log(typeof(num));
