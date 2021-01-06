@@ -1,35 +1,18 @@
-var x = 10;
-var y = 20;
-var z = x + y;
-// console.log(z);
-// console.log(x>y);
-// console.log(x<y);
-// console.log(typeof(z));
-
-// switch (z) {
-//     case 30:
-//         console.log("greater then or equal to 30");
-//         break;
-//     default:
-//         console.log("less then 10")
-//         break;
+"use strict";
+// var message = "Hello";
+// function say(){
+//     var message = "Hi";
+//     console.log(message);
 // }
+// say();
+// console.log("this is outside function",message);
 
-//loop
-// let arr = new Array();
-// arr.push(5);
-// arr.push(6);
-// arr.push(7);
-// arr.push(8);
-// arr.push(9);
+// var message = "Hello";
 
-// for (num in arr)
-// {
-//     console.log(`for index ${num} value is ${arr[num]}`);
-// }
-
-// functions
-var fun = function (x,y){
-    return x+y;
+//note strict mode
+function say(){
+    message = "Hi";
+    console.log(message);
 }
-console.log(fun(5,6));
+say();
+console.log("this is outside function",message);

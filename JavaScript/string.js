@@ -1,5 +1,7 @@
 let str = "Mohan Kumar rathore";
-console.log(str);
+
+console.log(str.length);
+console.log(str.includes("Mohan"));
 
 console.log(str.toLowerCase());
 console.log(str.toUpperCase());
