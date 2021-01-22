@@ -30,4 +30,21 @@ function clr()
 {
 document.getElementById("edu").value = ""
 }
-</script>
+export const COLORS = [
+  "black",
+  "brown",
+  "red",
+  "orange",
+  "yellow",
+  "green",
+  "blue",
+  "violet",
+  "grey",
+  "white",
+];
+
+export const colorCode = (color) => {
+  return COLORS.findIndex((e) => e === color);
+};
+
+console.log(colorCode("black", COLORS));
